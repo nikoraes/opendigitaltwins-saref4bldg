@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:DistributionFlowDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Represents devices of a distribution system that facilitate the distribution of energy or matter, such as air, water or power. (Definition adapated from http://www.buildingsmart-tech.org/ifc/IFC4/Add1/html/schema/ifcsharedbldgserviceelements/lexical/ifcdistributionflowelement.htm)"
+  },
+  "displayName": {
+    "en": "DistributionFlowDevice"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,80 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Chiller;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal capacity. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal capacity"
+      },
+      "name": "nominalCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Chiller evaporating temperature.Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal evaporating temmperature"
+      },
+      "name": "nominalEvaporatingTemmperature",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Chiller condensing temperature. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal condensing temperature"
+      },
+      "name": "nominalCondensingTemperature",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Sum of the refrigeration effect and the heat equivalent of the power input to the compressor. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal heat rejection rate"
+      },
+      "name": "nominalHeatRejectionRate",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal total power consumption. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal power consumption"
+      },
+      "name": "nominalPowerConsumption",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal chiller efficiency under nominal conditions. "
+      },
+      "displayName": {
+        "en": "nominal efficiency"
+      },
+      "name": "nominalEfficiency",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A chiller is a device used to remove heat from a liquid via a vapor-compression or absorption refrigeration cycle to cool a fluid, typically water or a mixture of water and glycol. The chilled fluid is then used to cool and dehumidify air in a building."
+  },
+  "displayName": {
+    "en": "Chiller"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

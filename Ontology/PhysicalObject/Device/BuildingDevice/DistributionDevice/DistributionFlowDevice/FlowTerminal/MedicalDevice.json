@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:MedicalDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A medical device is attached to a medical piping system and operates upon medical gases to perform a specific function. Medical gases include medical air, medical vacuum, oxygen, carbon dioxide, nitrogen, and nitrous oxide."
+  },
+  "displayName": {
+    "en": "Medical device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTerminal;1",
+  "@context": "dtmi:dtdl:context;2"
+}

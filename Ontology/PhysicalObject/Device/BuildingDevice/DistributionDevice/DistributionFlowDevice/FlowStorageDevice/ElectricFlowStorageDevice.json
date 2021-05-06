@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:ElectricFlowStorageDevice;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The maximum and minimum allowed voltage of the supply e.g. boundaries of 380V/440V may be applied for a nominal voltage of 400V."
+      },
+      "displayName": {
+        "en": "nominal supply voltage offset"
+      },
+      "name": "nominalSupplyVoltageMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The nominal voltage of the supply. Usually measured in Volts (V, W/A)."
+      },
+      "displayName": {
+        "en": "nominal supply voltage"
+      },
+      "name": "nominalSupplyVoltage",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The nominal frequency of the supply. Usually measured in cycles/s or Hertz (Hz)."
+      },
+      "displayName": {
+        "en": "nominal frequency"
+      },
+      "name": "nominalFrequency",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "An electric flow storage device is a device in which electrical energy is stored and from which energy may be progressively released."
+  },
+  "displayName": {
+    "en": "Electric flow storage device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowStorageDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

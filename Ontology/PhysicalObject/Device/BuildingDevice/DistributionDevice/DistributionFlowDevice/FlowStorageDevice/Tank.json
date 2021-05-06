@@ -1,0 +1,162 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Tank;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.B5"
+      },
+      "displayName": {
+        "en": "end shape type"
+      },
+      "name": "endShapeType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Defines the types of access (or cover) to a tank that may be specified. Note that covers are generally specified for rectangular tanks. For cylindrical tanks, access will normally be via a manhole."
+      },
+      "displayName": {
+        "en": "access type"
+      },
+      "name": "accessType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Defines the types of pattern (or shape of a tank that may be specified."
+      },
+      "displayName": {
+        "en": "pattern type"
+      },
+      "name": "patternType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Defines the general material category intended to be stored."
+      },
+      "displayName": {
+        "en": "storage type"
+      },
+      "name": "storageType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Number of sections used."
+      },
+      "displayName": {
+        "en": "number of sections"
+      },
+      "name": "numberOfSections",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Operating weight of the tank including all of its contents. Usually measured in kilograms (kg) or grams (g)."
+      },
+      "displayName": {
+        "en": "operating weight"
+      },
+      "name": "operatingWeight",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "FirstCurvatureRadius should be defined as the base or left side radius of curvature value. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "first curvature radius"
+      },
+      "name": "firstCurvatureRadius",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank. Note: Not required for a vertical cylindrical tank. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal width or diameter"
+      },
+      "name": "nominalWidthOrDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The total effective or actual volumetric capacity of the tank. Usually measured in cubic metre (m3).B3"
+      },
+      "displayName": {
+        "en": "effective capacity"
+      },
+      "name": "effectiveCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "SecondCurvatureRadius should be defined as the top or right side radius of curvature value. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "second curvature radius"
+      },
+      "name": "secondCurvatureRadius",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The total nominal or design volumetric capacity of the tank. Usually measured in cubic metre (m3)."
+      },
+      "displayName": {
+        "en": "nominal volumetric capacity"
+      },
+      "name": "nominalVolumetricCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal length or diameter"
+      },
+      "name": "nominalLengthOrDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The nominal depth of the tank. Note: Not required for a horizontal cylindrical tank. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal depth"
+      },
+      "name": "nominalDepth",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A tank is a vessel or container in which a fluid or gas is stored for later use."
+  },
+  "displayName": {
+    "en": "Tank"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowStorageDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

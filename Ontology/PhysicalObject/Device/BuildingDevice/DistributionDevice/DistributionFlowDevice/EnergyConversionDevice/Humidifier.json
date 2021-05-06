@@ -1,0 +1,82 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Humidifier;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Humidifier application. Fixed: Humidifier installed in a ducted flow distribution system. Portable: Humidifier is not installed in a ducted flow distribution system."
+      },
+      "displayName": {
+        "en": "application"
+      },
+      "name": "application",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Internal modulation control."
+      },
+      "displayName": {
+        "en": "internal control"
+      },
+      "name": "internalControl",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal rate of air flow. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "nominal air flow rate"
+      },
+      "name": "nominalAirFlowRate",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The weight of the device. Usually measured in kilograms (kg) or grams (g)."
+      },
+      "displayName": {
+        "en": "weight"
+      },
+      "name": "weight",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Make-up water requirement. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "water requirement"
+      },
+      "name": "waterRequirement",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal rate of water vapor added into the airstream. Usually measured in kg/s."
+      },
+      "displayName": {
+        "en": "nominal moisture gain"
+      },
+      "name": "nominalMoistureGain",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A humidifier is a device that adds moisture into the air."
+  },
+  "displayName": {
+    "en": "Humidifier"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

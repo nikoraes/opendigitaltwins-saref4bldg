@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:digitaltwins:saref:core:Actuator;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A device responsible for moving or controlling a mechanism or system"
+  },
+  "displayName": {
+    "en": "Actuator"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

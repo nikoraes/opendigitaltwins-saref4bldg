@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:digitaltwins:saref:core:Property;1",
+  "@type": "Interface",
+  "description": {
+    "en": "An aspect of an entity that can be observable by a sensor."
+  },
+  "displayName": {
+    "en": "Property"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

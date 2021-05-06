@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:core:Device;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs the start and stop function."
+  },
+  "displayName": {
+    "en": "Device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:PhysicalObject;1",
+  "@context": "dtmi:dtdl:context;2"
+}

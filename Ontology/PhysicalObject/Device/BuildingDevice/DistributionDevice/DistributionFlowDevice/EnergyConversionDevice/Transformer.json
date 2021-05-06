@@ -1,0 +1,183 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Transformer;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "List of the possible vector groups for the transformer from which that required may be set. Values in the enumeration list follow a standard international code where the first letter describes how the primary windings are connected, the second letter describes how the secondary windings are connected, and the numbers describe the rotation of voltages and currents from the primary to the secondary side in multiples of 30 degrees. D: means that the windings are delta-connected. Y: means that the windings are "
+      },
+      "displayName": {
+        "en": "transformer vector group"
+      },
+      "name": "transformerVectorGroup",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE)."
+      },
+      "displayName": {
+        "en": "is neutral primary terminal available"
+      },
+      "name": "isNeutralPrimaryTerminalAvailable",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A list of the secondary current types that can result from transformer output."
+      },
+      "displayName": {
+        "en": "secondary current type"
+      },
+      "name": "secondaryCurrentType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "An indication of whether the neutral point of the secondary winding is available as a terminal (=TRUE) or not (= FALSE)."
+      },
+      "displayName": {
+        "en": "is neutral secondary terminal available"
+      },
+      "name": "isNeutralSecondaryTerminalAvailable",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The frequency that has been transformed and is running out of the transformer on the secondary side. Usually measured in cycles/s or Hertz (Hz)."
+      },
+      "displayName": {
+        "en": "secondary frequency"
+      },
+      "name": "secondaryFrequency",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor."
+      },
+      "displayName": {
+        "en": "imaginary impedance ratio"
+      },
+      "name": "imaginaryImpedanceRatio",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor."
+      },
+      "displayName": {
+        "en": "real impedance ratio"
+      },
+      "name": "realImpedanceRatio",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "secondary apparent power"
+      },
+      "name": "secondaryApparentPower",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The voltage that has been transformed and is running out of the transformer on the secondary side. Usually measured in Volts (V, W/A)."
+      },
+      "displayName": {
+        "en": "secondary voltage"
+      },
+      "name": "secondaryVoltage",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The current that is going to be transformed and that runs into the transformer on the primary side. Usually measured in Ampere (A)."
+      },
+      "displayName": {
+        "en": "primary current"
+      },
+      "name": "primaryCurrent",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The frequency that is going to be transformed and that runs into the transformer on the primary side. Usually measured in cycles/s or Hertz (Hz)."
+      },
+      "displayName": {
+        "en": "primary frequency"
+      },
+      "name": "primaryFrequency",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The voltage that is going to be transformed and that runs into the transformer on the primary side. Usually measured in Volts (V, W/A)."
+      },
+      "displayName": {
+        "en": "primary voltage"
+      },
+      "name": "primaryVoltage",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "primary apparent power"
+      },
+      "name": "primaryApparentPower",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum apparent power/capacity in VA (volt ampere). Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "maximum apparent power"
+      },
+      "name": "apparentPowerMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The current that has been transformed and is running out of the transformer on the secondary side. Usually measured in Ampere (A)."
+      },
+      "displayName": {
+        "en": "secondary current"
+      },
+      "name": "secondaryCurrent",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A transformer is an inductive stationary device that transfers electrical energy from one circuit to another.\n\nTransformer is used to transform electric power; conversion of electric signals for other purposes is handled at other entities: Controller converts arbitrary signals, AudioVisualAppliance converts signals for audio or video streams, and CommunicationsAppliance converts signals for data or other communications usage."
+  },
+  "displayName": {
+    "en": "Transformer"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

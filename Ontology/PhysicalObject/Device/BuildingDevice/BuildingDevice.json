@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:BuildingDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A tangible object designed to accomplish a particular task in a building."
+  },
+  "displayName": {
+    "en": "Building device"
+  },
+  "extends": [
+    "dtmi:digitaltwins:saref:saref4bldg:BuildingObject;1",
+    "dtmi:digitaltwins:saref:core:Device;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

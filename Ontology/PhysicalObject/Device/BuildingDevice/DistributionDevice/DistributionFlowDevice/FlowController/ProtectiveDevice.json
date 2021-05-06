@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:ProtectiveDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A protective device breaks an electrical circuit when a stated electric current that passes through it is exceeded.\n\nA protective device provides protection against electrical current only (not as a general protective device). It may be used to represent the complete set of elements including both the tripping unit and the breaking unit that provide the protection. This may be particularly useful at earlier stages of design where the approach to breaking the electrical supply may be determined but the metho"
+  },
+  "displayName": {
+    "en": "Protective device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowController;1",
+  "@context": "dtmi:dtdl:context;2"
+}

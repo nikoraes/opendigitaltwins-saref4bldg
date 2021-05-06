@@ -1,0 +1,145 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:SpaceHeater;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Enumeration defining the temperature classification of the space heater surface temperature. low temperature - surface temperature is relatively low, usually heated by hot water or electricity. high temperature - surface temperature is relatively high, usually heated by gas or steam."
+      },
+      "displayName": {
+        "en": "temperature classification"
+      },
+      "name": "temperatureClassification",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": [
+          "Enumeration defining the energy source or fuel cumbusted to generate heat.",
+          "The source of energy."
+        ]
+      },
+      "displayName": {
+        "en": "energy source"
+      },
+      "name": "energySource",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Number of sections used."
+      },
+      "displayName": {
+        "en": "number of sections"
+      },
+      "name": "numberOfSections",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Indicates how heat is transmitted according to the shape of the space heater."
+      },
+      "displayName": {
+        "en": "heat transfer dimension"
+      },
+      "name": "heatTransferDimension",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Indicates how the device is designed to be placed."
+      },
+      "displayName": {
+        "en": "placement type"
+      },
+      "name": "placementType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Number of panels."
+      },
+      "displayName": {
+        "en": "number of panels"
+      },
+      "name": "numberOfPanels",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Enumeration defining the heat transfer medium if applicable."
+      },
+      "displayName": {
+        "en": "heat transfer medium"
+      },
+      "name": "heatTransferMedium",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Overall Thermal Efficiency is defined as gross energy output of the heat transfer device divided by the energy input."
+      },
+      "displayName": {
+        "en": "thermal efficiency"
+      },
+      "name": "thermalEfficiency",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Total nominal heat output as listed by the manufacturer. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "output capacity"
+      },
+      "name": "outputCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Product of component mass and specific heat."
+      },
+      "displayName": {
+        "en": "thermal mass heat capacity"
+      },
+      "name": "thermalMassHeatCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Overall body mass of the heater. Usually measured in kilograms (kg) or grams (g)."
+      },
+      "displayName": {
+        "en": "body mass"
+      },
+      "name": "bodyMass",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "Space heaters utilize a combination of radiation and/or natural convection using a heating source such as electricity, steam or hot water to heat a limited space or area. Examples of space heaters include radiators, convectors, baseboard and finned-tube heaters.\n\nUnitaryEquipment should be used for packaged units supporting a combination of heating, cooling, and/or dehumidification; Coil should be used for coil-based floor heating."
+  },
+  "displayName": {
+    "en": "Space heater"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTerminal;1",
+  "@context": "dtmi:dtdl:context;2"
+}

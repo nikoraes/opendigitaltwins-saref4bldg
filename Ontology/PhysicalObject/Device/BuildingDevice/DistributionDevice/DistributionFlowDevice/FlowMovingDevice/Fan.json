@@ -1,0 +1,126 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Fan;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Motor drive type: DIRECTDRIVE: Direct drive. BELTDRIVE: Belt drive. COUPLING: Coupling. OTHER: Other type of motor drive. UNKNOWN: Unknown motor drive type. "
+      },
+      "displayName": {
+        "en": "motor drive type"
+      },
+      "name": "motorDriveType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "InletVane: Control by adjusting inlet vane. VariableSpeedDrive: Control by variable speed drive. BladePitchAngle: Control by adjusting blade pitch angle. TwoSpeed: Control by switch between high and low speed. DischargeDamper: Control by modulating discharge damper."
+      },
+      "displayName": {
+        "en": "capacity control type"
+      },
+      "name": "capacityControlType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal total pressure rise across the fan. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "nominal total pressure"
+      },
+      "name": "nominalTotalPressure",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal rate of air flow. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "nominal air flow rate"
+      },
+      "name": "nominalAirFlowRate",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal fan wheel speed. Usually measured in cycles/s."
+      },
+      "displayName": {
+        "en": "nominal rotation speed"
+      },
+      "name": "nominalRotationSpeed",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal fan power rate.Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal power rate"
+      },
+      "name": "nominalPowerRate",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The static pressure within the air stream that the fan must overcome to insure designed circulation of air. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "nominal static pressure"
+      },
+      "name": "nominalStaticPressure",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Time of operation at maximum operational ambient air temperature. Measured in seconds (s) or days (d) or other units of time."
+      },
+      "displayName": {
+        "en": "operational riterial"
+      },
+      "name": "operationalRiterial",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A fan is a device which imparts mechanical work on a gas. A typical usage of a fan is to induce airflow in a building services air distribution system."
+  },
+  "displayName": {
+    "en": "Fan"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowMovingDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

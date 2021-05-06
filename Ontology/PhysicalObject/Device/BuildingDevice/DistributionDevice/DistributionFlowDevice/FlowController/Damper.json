@@ -1,0 +1,241 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Damper;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Blade edge."
+      },
+      "displayName": {
+        "en": "blade edge"
+      },
+      "name": "bladeEdge",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The type of frame used by the damper (e.g., Standard, Single Flange, Single Reversed Flange, Double Flange, etc.)."
+      },
+      "displayName": {
+        "en": "frame type"
+      },
+      "name": "frameType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Temperature rating. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "temperature rating"
+      },
+      "name": "temperatureRating",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Close off rating. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "close off rating"
+      },
+      "name": "closeOffRating",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The length (or depth) of the damper frame. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "frame depth"
+      },
+      "name": "frameDepth",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Total pressure drop across damper. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "open pressure drop"
+      },
+      "name": "openPressureDrop",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum working pressure. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "maximum working pressure"
+      },
+      "name": "workingPressureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The thickness of the damper blade. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "blade thickness"
+      },
+      "name": "bladeThickness",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Leakage when fully closed. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "leakage fully closed"
+      },
+      "name": "leakageFullyClosed",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal rate of air flow. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "nominal air flow rate"
+      },
+      "name": "nominalAirFlowRate",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum allowable air flow rate. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "air flow rate range max"
+      },
+      "name": "airFlowRateMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Face area open to the airstream. Usually measured in square metre (m2)."
+      },
+      "displayName": {
+        "en": "face area"
+      },
+      "name": "faceArea",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The thickness of the damper frame material. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "frame thickness"
+      },
+      "name": "frameThickness",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The intended orientation for the damper as specified by the manufacturer."
+      },
+      "displayName": {
+        "en": "orientation"
+      },
+      "name": "orientation",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Blade action."
+      },
+      "displayName": {
+        "en": "blade action"
+      },
+      "name": "bladeAction",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The operational mechanism for the damper operation."
+      },
+      "displayName": {
+        "en": "operation"
+      },
+      "name": "operation",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Blade shape. Flat means triple V-groove."
+      },
+      "displayName": {
+        "en": "blade shape"
+      },
+      "name": "bladeShape",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Number of blades."
+      },
+      "displayName": {
+        "en": "number of blades"
+      },
+      "name": "numberOfBlades",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "description": {
+    "en": "A damper typically participates in an HVAC duct distribution system and is used to control or modulate the flow of air."
+  },
+  "displayName": {
+    "en": "Damper"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowController;1",
+  "@context": "dtmi:dtdl:context;2"
+}

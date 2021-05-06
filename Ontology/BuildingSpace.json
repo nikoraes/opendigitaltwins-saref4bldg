@@ -1,0 +1,35 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:BuildingSpace;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "A relation between a physical space and the objects located in such space. Inverse of: isContainedIn"
+      },
+      "displayName": {
+        "en": "contains"
+      },
+      "name": "contains",
+      "target": "dtmi:digitaltwins:saref:saref4bldg:PhysicalObject;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Relation between a building or a building space and the spaces it can be divided into. Inverse of: isSpaceOf"
+      },
+      "displayName": {
+        "en": "has space"
+      },
+      "name": "hasSpace",
+      "target": "dtmi:digitaltwins:saref:saref4bldg:BuildingSpace;1"
+    }
+  ],
+  "description": {
+    "en": "An entity used to define the physical spaces of the building. A building space contains devices or building objects."
+  },
+  "displayName": {
+    "en": "Building space"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

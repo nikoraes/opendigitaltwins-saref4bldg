@@ -1,0 +1,41 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Actuator;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Specifies the required fail-safe position of the actuator."
+      },
+      "displayName": {
+        "en": "fail position"
+      },
+      "name": "failPosition",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator."
+      },
+      "displayName": {
+        "en": "manual override"
+      },
+      "name": "manualOverride",
+      "schema": "boolean",
+      "writable": true
+    }
+  ],
+  "description": {
+    "en": "An actuator is a mechanical device for moving or controlling a mechanism or system. An actuator takes energy, usually created by air, electricity, or liquid, and converts that into some kind of motion."
+  },
+  "displayName": {
+    "en": "Actuator"
+  },
+  "extends": [
+    "dtmi:digitaltwins:saref:saref4bldg:DistributionControlDevice;1",
+    "dtmi:digitaltwins:saref:core:Actuator;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

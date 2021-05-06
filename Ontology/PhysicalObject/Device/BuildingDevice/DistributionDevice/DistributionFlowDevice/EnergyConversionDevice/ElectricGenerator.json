@@ -1,0 +1,47 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:ElectricGenerator;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The maximum output power rating of the engine. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "maximum power output"
+      },
+      "name": "powerOutputMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The ratio of output capacity to intake capacity."
+      },
+      "displayName": {
+        "en": "electric generator efficiency"
+      },
+      "name": "electricGeneratorEfficiency",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "IEC. Start current factor defines how large the peek starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and we get the start current."
+      },
+      "displayName": {
+        "en": "start current factor"
+      },
+      "name": "startCurrentFactor",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "An electric generator is an engine that is a machine for converting mechanical energy into electrical energy."
+  },
+  "displayName": {
+    "en": "Electric generator"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

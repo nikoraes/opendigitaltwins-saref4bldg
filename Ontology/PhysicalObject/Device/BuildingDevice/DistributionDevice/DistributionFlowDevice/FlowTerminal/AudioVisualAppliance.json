@@ -1,0 +1,37 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:AudioVisualAppliance;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Indicates media sources and corresponding names of ports (DistributionPort with FlowDirection=SINK and PredefinedType=AUDIOVISUAL) or aggregated audio/video components (AudioVisualAppliance)."
+      },
+      "displayName": {
+        "en": "media source"
+      },
+      "name": "mediaSource",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Indicates discrete audio volume levels and corresponding sound power offsets, if applicable. Missing values may be interpolated. Measured in watts."
+      },
+      "displayName": {
+        "en": "audio volume"
+      },
+      "name": "audioVolume",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "An audio-visual appliance is a device that displays, captures, transmits, or receives audio or video.\n\nAudio-visual appliances may be fixed in place or may be able to be moved from one space to another. They may require an electrical supply that may be supplied either by an electrical circuit or provided from a local battery source. Audio-visual appliances may be connected to data circuits including specialist circuits for audio visual purposes only."
+  },
+  "displayName": {
+    "en": "Audio visual appliance"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTerminal;1",
+  "@context": "dtmi:dtdl:context;2"
+}

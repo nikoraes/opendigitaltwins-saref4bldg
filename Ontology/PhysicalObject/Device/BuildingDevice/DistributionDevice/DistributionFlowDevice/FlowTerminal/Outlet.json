@@ -1,0 +1,38 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Outlet;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Indication of whether the outlet accepts a loose plug connection (= TRUE) or whether it is directly connected (= FALSE) or whether the form of connection has not yet been determined (= UNKNOWN)."
+      },
+      "displayName": {
+        "en": "is pluggable outlet"
+      },
+      "name": "isPluggableOutlet",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The number of sockets that may be connected. In case of inconsistency, sockets defined on ports take precedence."
+      },
+      "displayName": {
+        "en": "number os sockets"
+      },
+      "name": "numberOsSockets",
+      "schema": "integer",
+      "writable": true
+    }
+  ],
+  "description": {
+    "en": "An outlet is a device installed at a point to receive one or more inserted plugs for electrical power or communications.\n\nPower outlets are commonly connected within a junction box; data outlets may be directly connected to a wall. For power outlets sharing the same circuit within a junction box, the ports should indicate the logical wiring relationship to the enclosing junction box, even though they may be physically connected to a cable going to another outlet, switch, or fixture."
+  },
+  "displayName": {
+    "en": "Outlet"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTerminal;1",
+  "@context": "dtmi:dtdl:context;2"
+}

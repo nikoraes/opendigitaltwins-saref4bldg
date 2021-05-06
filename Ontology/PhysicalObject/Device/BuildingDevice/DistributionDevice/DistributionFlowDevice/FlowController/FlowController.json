@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:FlowController;1",
+  "@type": "Interface",
+  "description": {
+    "en": "The distribution flow element FlowController defines the occurrence of elements of a distribution system that are used to regulate flow through a distribution system. Examples include dampers, valves, switches, and relays."
+  },
+  "displayName": {
+    "en": "Flow controller"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionFlowDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

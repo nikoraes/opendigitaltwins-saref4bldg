@@ -1,0 +1,125 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:DuctSilencer;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "TRUE if the silencer has exterior insulation. FALSE if it does not."
+      },
+      "displayName": {
+        "en": "has exterior insulation"
+      },
+      "name": "hasExteriorInsulation",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum allowable air flow rate. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "air flow rate range max"
+      },
+      "name": "airFlowRateMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Minimum allowable air flow rate. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "air flow rate range min"
+      },
+      "name": "airFlowRateMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The weight of the device. Usually measured in kilograms (kg) or grams (g)."
+      },
+      "displayName": {
+        "en": "weight"
+      },
+      "name": "weight",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable minimum working pressure (relative to ambient pressure). Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "minimum working pressure"
+      },
+      "name": "workingPressureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The finished length of the device. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "length"
+      },
+      "name": "length",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Hydraulic diameter. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "hydraulic diameter"
+      },
+      "name": "hydraulicDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum working pressure. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "maximum working pressure"
+      },
+      "name": "workingPressureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A duct silencer is a device that is typically installed inside a duct distribution system for the purpose of reducing the noise levels from air movement, fan noise, etc. in the adjacent space or downstream of the duct silencer device."
+  },
+  "displayName": {
+    "en": "Duct silencer"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTreatmentDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

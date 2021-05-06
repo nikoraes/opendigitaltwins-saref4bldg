@@ -1,0 +1,104 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:AirToAirHeatRecovery;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Type of heat transfer between the two air streams."
+      },
+      "displayName": {
+        "en": "heat transfer type enum"
+      },
+      "name": "heatTransferTypeEnum",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Whether the heat exchanger has defrost function or not."
+      },
+      "displayName": {
+        "en": "has defrost"
+      },
+      "name": "hasDefrost",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum primary airflow that can be delivered. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "primary air flow rate range"
+      },
+      "name": "primaryAirFlowRateMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "secondary air flow rate range"
+      },
+      "name": "secondaryAirFlowRateMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum secondary airflow that can be delivered. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "secondary air flow rate range"
+      },
+      "name": "secondaryAirFlowRateMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Minimum primary airflow that can be delivered. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "primary air flow rate range"
+      },
+      "name": "primaryAirFlowRateMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "An air-to-air heat recovery device employs a counter-flow heat exchanger between inbound and outbound air flow. It is typically used to transfer heat from warmer air in one chamber to cooler air in the second chamber (i.e., typically used to recover heat from the conditioned air being exhausted and the outside air being supplied to a building), resulting in energy savings from reduced heating (or cooling) requirements."
+  },
+  "displayName": {
+    "en": "Air to air heat recovery"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:FireSuppressionTerminal;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A fire suppression terminal has the purpose of delivering a fluid (gas or liquid) that will suppress a fire.\n\nA fire suppression terminal provides for all forms of sprinkler, spreader and other form of terminal that is connected to a pipework system and intended to act in the role of suppressing a fire."
+  },
+  "displayName": {
+    "en": "Fire suppression terminal"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTerminal;1",
+  "@context": "dtmi:dtdl:context;2"
+}

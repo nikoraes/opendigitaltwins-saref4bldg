@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:digitaltwins:saref:core:UnitOfMeasure;1",
+  "@type": "Interface",
+  "description": {
+    "en": "The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but"
+  },
+  "displayName": {
+    "en": "Unit of measure"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Sensor;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A sensor is a device that measures a physical quantity and converts it into a signal which can be read by an observer or by an instrument."
+  },
+  "displayName": {
+    "en": "Sensor"
+  },
+  "extends": [
+    "dtmi:digitaltwins:saref:saref4bldg:DistributionControlDevice;1",
+    "dtmi:digitaltwins:saref:core:Sensor;1"
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

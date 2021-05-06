@@ -1,0 +1,171 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:TubeBundle;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Number of tube rows in the tube bundle assembly."
+      },
+      "displayName": {
+        "en": "number of rows"
+      },
+      "name": "numberOfRows",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "TRUE if the tube has a turbulator, FALSE if it does not."
+      },
+      "displayName": {
+        "en": "has turbulator"
+      },
+      "name": "hasTurbulator",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Number of parallel fluid tube circuits."
+      },
+      "displayName": {
+        "en": "number of circuits"
+      },
+      "name": "numberOfCircuits",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The finished length of the device. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "length"
+      },
+      "name": "length",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Actual inner diameter of the tube in the tube bundle. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "inside diameter"
+      },
+      "name": "insideDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Staggered tube row spacing. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "staggered row spacing"
+      },
+      "name": "staggeredRowSpacing",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Fouling factor of the tubes in the tube bundle. Usually measured in m2 Kelvin/Watt."
+      },
+      "displayName": {
+        "en": "fouling factor"
+      },
+      "name": "foulingFactor",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Vertical spacing between tubes in the tube bundle.Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "vertical spacing"
+      },
+      "name": "verticalSpacing",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal diameter or width of the tubes in the tube bundle. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal diameter"
+      },
+      "name": "nominalDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Total volume of fluid in the tubes and their headers. Usually measured in cubic metre (m3)."
+      },
+      "displayName": {
+        "en": "volumen"
+      },
+      "name": "volumen",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Horizontal spacing between tubes in the tube bundle. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "horizontal spacing"
+      },
+      "name": "horizontalSpacing",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Actual outside diameter of the tube in the tube bundle. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "outside diameter"
+      },
+      "name": "outsideDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "In-line tube row spacing. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "in line row spacing"
+      },
+      "name": "inLineRowSpacing",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Fouling factor of the tubes in the tube bundle. Usually measured in m2 Kelvin/Watt."
+      },
+      "displayName": {
+        "en": "thermal conductivity"
+      },
+      "name": "thermalConductivity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A tube bundle is a device consisting of tubes and bundles of tubes used for heat transfer and contained typically within other energy conversion devices, such as a chiller or coil."
+  },
+  "displayName": {
+    "en": "Tube bundle"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

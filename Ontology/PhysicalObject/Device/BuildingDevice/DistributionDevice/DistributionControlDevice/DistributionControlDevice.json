@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:DistributionControlDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Represents devices of a building automation control system that are used to impart control over elements of a distribution system. (Definition adapated from http://www.buildingsmart-tech.org/ifc/IFC4/Add1/html/schema/ifcsharedbldgserviceelements/lexical/ifcdistributioncontrolelement.htm)"
+  },
+  "displayName": {
+    "en": "Distribution control device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

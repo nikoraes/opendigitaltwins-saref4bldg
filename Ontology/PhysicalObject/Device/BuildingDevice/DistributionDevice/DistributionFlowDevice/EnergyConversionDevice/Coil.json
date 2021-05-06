@@ -1,0 +1,103 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Coil;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Indicates how the device is designed to be placed."
+      },
+      "displayName": {
+        "en": "placement type"
+      },
+      "name": "placementType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal sensible capacity. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal sensible capacity"
+      },
+      "name": "nominalSensibleCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Minimum allowable air flow rate. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "air flow rate range min"
+      },
+      "name": "airFlowRateMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum allowable air flow rate. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "air flow rate range max"
+      },
+      "name": "airFlowRateMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal latent capacity. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal latent capacity"
+      },
+      "name": "nominalLatentCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal UA value."
+      },
+      "displayName": {
+        "en": "nominal ua"
+      },
+      "name": "nominalUa",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A coil is a device used to provide heat transfer between non-mixing media. A common example is a cooling coil, which utilizes a finned coil in which circulates chilled water, antifreeze, or refrigerant that is used to remove heat from air moving across the surface of the coil. A coil may be used either for heating or cooling purposes by placing a series of tubes (the coil) carrying a heating or cooling fluid into an airstream. The coil may be constructed from tubes bundled in a serpentine form or from finne"
+  },
+  "displayName": {
+    "en": "Coil"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:SolarDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A solar device converts solar radiation into other energy such as electric current or thermal energy."
+  },
+  "displayName": {
+    "en": "Solar device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

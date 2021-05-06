@@ -1,0 +1,127 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Compressor;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No."
+      },
+      "displayName": {
+        "en": "has hot gas bypass"
+      },
+      "name": "hasHotGasBypass",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Type of power driving the compressor."
+      },
+      "displayName": {
+        "en": "power source"
+      },
+      "name": "powerSource",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Refrigerant class used by the compressor. CFC: Chlorofluorocarbons. HCFC: Hydrochlorofluorocarbons. HFC: Hydrofluorocarbons."
+      },
+      "displayName": {
+        "en": "refrigerant class"
+      },
+      "name": "refrigerantClass",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Compressor capacity under ideal conditions. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "ideal capacity"
+      },
+      "name": "idealCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Compressor shaft power under ideal conditions. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "ideal shaft power"
+      },
+      "name": "idealShaftPower",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Diameter of compressor impeller - used to scale performance of geometrically similar compressors. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "impeller diameter"
+      },
+      "name": "impellerDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Compressor speed. Usually measured in cycles/s."
+      },
+      "displayName": {
+        "en": "compressor speed"
+      },
+      "name": "compressorSpeed",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Maximum part load ratio as a fraction of nominal capacity."
+      },
+      "displayName": {
+        "en": "maximum part load ratio"
+      },
+      "name": "partLoadRatioMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal capacity. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal capacity"
+      },
+      "name": "nominalCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Minimum part load ratio as a fraction of nominal capacity."
+      },
+      "displayName": {
+        "en": "minimum part load ratio"
+      },
+      "name": "partLoadRatioMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A compressor is a device that compresses a fluid typically used in a refrigeration circuit."
+  },
+  "displayName": {
+    "en": "Compressor"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowMovingDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

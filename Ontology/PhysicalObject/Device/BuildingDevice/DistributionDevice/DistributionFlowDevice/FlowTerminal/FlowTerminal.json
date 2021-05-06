@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:FlowTerminal;1",
+  "@type": "Interface",
+  "description": {
+    "en": "The distribution flow element FlowTerminal defines the occurrence of a permanently attached element that acts as a terminus or beginning of a distribution system (such as an air outlet, drain, water closet, or sink). A terminal is typically a point at which a system interfaces with an external environment."
+  },
+  "displayName": {
+    "en": "Flow terminal"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionFlowDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

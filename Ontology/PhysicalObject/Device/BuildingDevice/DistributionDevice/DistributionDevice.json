@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:DistributionDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "Generalization of all devices that participate in a distribution system. (Definition adapated from http://www.buildingsmart-tech.org/ifc/IFC4/Add1/html/schema/ifcproductextension/lexical/ifcdistributionelement.htm)"
+  },
+  "displayName": {
+    "en": "Distribution device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:BuildingDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

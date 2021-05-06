@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:BuildingObject;1",
+  "@type": "Interface",
+  "description": {
+    "en": "An object in the building that can be controlled by devices, such as a door or a window that can be automatically opened or closed by an actuator.  (Definition taken from SAREF 1.0)"
+  },
+  "displayName": {
+    "en": "Building object"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:PhysicalObject;1",
+  "@context": "dtmi:dtdl:context;2"
+}

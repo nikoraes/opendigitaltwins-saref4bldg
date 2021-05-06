@@ -1,0 +1,24 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Building;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Relation between a building or a building space and the spaces it can be divided into. Inverse of: isSpaceOf"
+      },
+      "displayName": {
+        "en": "has space"
+      },
+      "name": "hasSpace",
+      "target": "dtmi:digitaltwins:saref:saref4bldg:BuildingSpace;1"
+    }
+  ],
+  "description": {
+    "en": "A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space)."
+  },
+  "displayName": {
+    "en": "Building"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

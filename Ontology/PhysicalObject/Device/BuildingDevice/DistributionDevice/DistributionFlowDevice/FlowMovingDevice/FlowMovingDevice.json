@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:FlowMovingDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "The distribution flow element FlowMovingDevice defines the occurrence of an apparatus used to distribute, circulate or perform conveyance of fluids, including liquids and gases (such as a pump or fan), and typically participates in a flow distribution system."
+  },
+  "displayName": {
+    "en": "Flow moving device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionFlowDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

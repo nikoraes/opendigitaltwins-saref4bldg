@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:FlowStorageDevice;1",
+  "@type": "Interface",
+  "description": {
+    "en": "The distribution flow element FlowStorageDevice defines the occurrence of a device that participates in a distribution system and is used for temporary storage (such as a tank)."
+  },
+  "displayName": {
+    "en": "Flow storage device"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionFlowDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,1 +1,3 @@
-# opendigitaltwins-saref4bldg
+# Digital Twins Definition Language (DTDL) ontology for Smart Buildings based on SAREF
+
+The original SAREF extension for building ontology is represented using the W3C Web Ontology Language (OWL) and it can be visualized [here](https://saref.etsi.org/saref4bldg/v1.1.2/). It has been converted into the DTDL syntax used in this repository using the universal [OWL2DTDL](https://github.com/Azure/opendigitaltwins-building-tools/tree/master/OWL2DTDL) tool.

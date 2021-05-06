@@ -1,0 +1,51 @@
+{
+  "@id": "dtmi:digitaltwins:saref:core:Measurement;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A relationship stating the timestamp of an entity (e.g. a measurement)."
+      },
+      "displayName": {
+        "en": "has timestamp"
+      },
+      "name": "hasTimestamp",
+      "schema": "dateTime",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "A relation between a measurement and the property such measurement is about."
+      },
+      "displayName": {
+        "en": "relates to property"
+      },
+      "maxMultiplicity": 1,
+      "minMultiplicity": 0,
+      "name": "relatesToProperty",
+      "target": "dtmi:digitaltwins:saref:core:Property;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "A relation between a measurement and the unit of measure in which the measurement value is expressed."
+      },
+      "displayName": {
+        "en": "is measured in"
+      },
+      "maxMultiplicity": 1,
+      "minMultiplicity": 0,
+      "name": "isMeasuredIn",
+      "target": "dtmi:digitaltwins:saref:core:UnitOfMeasure;1"
+    }
+  ],
+  "description": {
+    "en": "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
+  },
+  "displayName": {
+    "en": "Measurement"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,92 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Condenser;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Refrigerant class used by the compressor. CFC: Chlorofluorocarbons. HCFC: Hydrochlorofluorocarbons. HFC: Hydrofluorocarbons."
+      },
+      "displayName": {
+        "en": "refrigerant class"
+      },
+      "name": "refrigerantClass",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Internal volume of evaporator (refrigerant side). Usually measured in cubic metre (m3)."
+      },
+      "displayName": {
+        "en": "internal refrigerant volume"
+      },
+      "name": "internalRefrigerantVolume",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal overall heat transfer coefficient associated with nominal heat transfer area. Usually measured in Watts/m2 Kelvin."
+      },
+      "displayName": {
+        "en": "nominal heat transfer coefficient"
+      },
+      "name": "nominalHeatTransferCoefficient",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "External surface area (both primary and secondary area). Usually measured in square metre (m2)."
+      },
+      "displayName": {
+        "en": "external surface area"
+      },
+      "name": "externalSurfaceArea",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Internal volume of evaporator (water side). Usually measured in cubic metre (m3)."
+      },
+      "displayName": {
+        "en": "internal water volume"
+      },
+      "name": "internalWaterVolume",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal heat transfer surface area associated with nominal overall heat transfer coefficient. Usually measured in square metre (m2)."
+      },
+      "displayName": {
+        "en": "nominal heat transfer area"
+      },
+      "name": "nominalHeatTransferArea",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Internal surface area. Usually measured in square metre (m2)."
+      },
+      "displayName": {
+        "en": "internal surface area"
+      },
+      "name": "internalSurfaceArea",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A condenser is a device that is used to dissipate heat, typically by condensing a substance such as a refrigerant from its gaseous to its liquid state."
+  },
+  "displayName": {
+    "en": "Condenser"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

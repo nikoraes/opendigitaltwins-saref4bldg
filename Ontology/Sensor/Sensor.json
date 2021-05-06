@@ -1,0 +1,11 @@
+{
+  "@id": "dtmi:digitaltwins:saref:core:Sensor;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes.\nA device that has category saref:Sensor and performs a saref:SensingFunction."
+  },
+  "displayName": {
+    "en": "Sensor"
+  },
+  "@context": "dtmi:dtdl:context;2"
+}

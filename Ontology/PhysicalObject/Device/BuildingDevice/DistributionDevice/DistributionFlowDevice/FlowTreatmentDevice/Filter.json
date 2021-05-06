@@ -1,0 +1,157 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Filter;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal fluid flow rate through the filter. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "nominal flow rate"
+      },
+      "name": "nominalFlowRate",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The weight of the device. Usually measured in kilograms (kg) or grams (g)."
+      },
+      "displayName": {
+        "en": "weight"
+      },
+      "name": "weight",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Possible range of fluid flowrate that can be delivered. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "fluid flow rate range"
+      },
+      "name": "fluidFlowRateMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "initial resistance"
+      },
+      "name": "initialResistance",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Particle geometric mean diameter associated with nominal efficiency. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal particle geometric mean diameter"
+      },
+      "name": "nominalParticleGeometricMeanDiameter",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Particle geometric standard deviation associated with nominal efficiency. "
+      },
+      "displayName": {
+        "en": "nominal particle geometric standard deviation"
+      },
+      "name": "nominalParticleGeometricStandardDeviation",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Average fluid velocity at the media surface. Usually measured in m/s."
+      },
+      "displayName": {
+        "en": "nominal media surface velocity"
+      },
+      "name": "nominalMediaSurfaceVelocity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Possible range of fluid flowrate that can be delivered. Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "fluid flow rate range"
+      },
+      "name": "fluidFlowRateMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1). Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "final resistance"
+      },
+      "name": "finalResistance",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Total pressure drop across the filter. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "nominal pressure drop"
+      },
+      "name": "nominalPressureDrop",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Filter face velocity. Usually measured in m/s."
+      },
+      "displayName": {
+        "en": "nominal filter face velocity"
+      },
+      "name": "nominalFilterFaceVelocity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A filter is an apparatus used to remove particulate or gaseous matter from fluids and gases."
+  },
+  "displayName": {
+    "en": "Filter"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTreatmentDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

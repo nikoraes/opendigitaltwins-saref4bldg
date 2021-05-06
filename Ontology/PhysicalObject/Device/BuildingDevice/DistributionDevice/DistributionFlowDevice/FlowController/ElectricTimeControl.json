@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:ElectricTimeControl;1",
+  "@type": "Interface",
+  "description": {
+    "en": "An electric time control is a device that applies control to the provision or flow of electrical energy over time."
+  },
+  "displayName": {
+    "en": "Electric time control"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowController;1",
+  "@context": "dtmi:dtdl:context;2"
+}

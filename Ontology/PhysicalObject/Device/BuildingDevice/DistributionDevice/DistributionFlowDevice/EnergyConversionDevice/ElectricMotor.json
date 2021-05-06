@@ -1,0 +1,128 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:ElectricMotor;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Designation of the frame size according to the named range of frame sizes designated at the place of use or according to a given standard."
+      },
+      "displayName": {
+        "en": "frame size"
+      },
+      "name": "frameSize",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "A list of the available types of motor enclosure from which that required may be selected."
+      },
+      "displayName": {
+        "en": "motor enclosure type"
+      },
+      "name": "motorEnclosureType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE)."
+      },
+      "displayName": {
+        "en": "is guarded"
+      },
+      "name": "isGuarded",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) ."
+      },
+      "displayName": {
+        "en": "has part winding"
+      },
+      "name": "hasPartWinding",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals."
+      },
+      "displayName": {
+        "en": "starting time"
+      },
+      "name": "startingTime",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Input current when a motor armature is energized but not rotating. Usually measured in Ampere (A)."
+      },
+      "displayName": {
+        "en": "locked rotor current"
+      },
+      "name": "lockedRotorCurrent",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "IEC. Start current factor defines how large the peek starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and we get the start current."
+      },
+      "displayName": {
+        "en": "start current factor"
+      },
+      "name": "startCurrentFactor",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The maximum output power rating of the engine. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "maximum power output"
+      },
+      "name": "powerOutputMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The maximum time (in s) at which the motor could run with locked rotor when the motor is used in an EX-environment. The time indicates that a protective device should trip before this time when the starting current of the motor is slowing through the device."
+      },
+      "displayName": {
+        "en": "te time"
+      },
+      "name": "teTime",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The ratio of output capacity to intake capacity."
+      },
+      "displayName": {
+        "en": "electric motor efficiency"
+      },
+      "name": "electricMotorEfficiency",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "An electric motor is an engine that is a machine for converting electrical energy into mechanical energy."
+  },
+  "displayName": {
+    "en": "Electric motor"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,37 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:ProtectiveDeviceTrippingUnit;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The designation of the standard applicable for the definition of the characteristics of the unit."
+      },
+      "displayName": {
+        "en": "standard"
+      },
+      "name": "standard",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The maximum terminal size capacity of the device. Usually measured in square metre (m2)."
+      },
+      "displayName": {
+        "en": "limiting terminal size"
+      },
+      "name": "limitingTerminalSize",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A protective device tripping unit breaks an electrical circuit at a separate breaking unit when a stated electric current that passes through the unit is exceeded."
+  },
+  "displayName": {
+    "en": "Protective device tripping unit"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionControlDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

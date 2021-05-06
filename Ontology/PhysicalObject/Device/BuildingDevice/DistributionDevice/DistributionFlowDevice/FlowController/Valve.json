@@ -1,0 +1,105 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Valve;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The method of valve operation where: DROPWEIGHT: A valve that is closed by the action of a weighted lever being released, the weight normally being prevented from dropping by being held by a wire, the closure normally being made by the action of heat on a fusible link in the wire FLOAT: A valve that is opened and closed by the action of a float that rises and falls with water level. The float may be a ball attached to a lever or other mechanism HYDRAULIC: A valve that is opened and closed by hydraulic actua"
+      },
+      "displayName": {
+        "en": "valve operation"
+      },
+      "name": "valveOperation",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The configuration of the ports of a valve according to either the linear route taken by a fluid flowing through the valve or by the number of ports where: SINGLEPORT: Valve that has a single entry port from the system that it serves, the exit port being to the surrounding environment. ANGLED_2_PORT: Valve in which the direction of flow is changed through 90 degrees. STRAIGHT_2_PORT: Valve in which the flow is straight through. STRAIGHT_3_PORT: Valve with three separate ports. CROSSOVER_4_PORT: Valve with 4 "
+      },
+      "displayName": {
+        "en": "valve pattern"
+      },
+      "name": "valvePattern",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The mechanism by which the valve function is achieved where: BALL: Valve that has a ported ball that can be turned relative to the body seat ports. BUTTERFLY: Valve in which a streamlined disc pivots about a diametric axis. CONFIGUREDGATE: Screwdown valve in which the closing gate is shaped in a configured manner to have a more precise control of pressure and flow change across the valve. GLAND: Valve with a tapered seating, in which a rotatable plug is retained by means of a gland and gland packing. GLOBE:"
+      },
+      "displayName": {
+        "en": "valve mechanism"
+      },
+      "name": "valveMechanism",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Close off rating. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "close off rating"
+      },
+      "name": "closeOffRating",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The maximum pressure to which the valve has been subjected under test. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "test pressure"
+      },
+      "name": "testPressure",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.). Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "size"
+      },
+      "name": "size",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve."
+      },
+      "displayName": {
+        "en": "flow coefficient"
+      },
+      "name": "flowCoefficient",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The normally expected maximum working pressure of the valve. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "working pressure"
+      },
+      "name": "workingPressure",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A valve is used in a building services piping distribution system to control or modulate the flow of the fluid."
+  },
+  "displayName": {
+    "en": "Valve"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowController;1",
+  "@context": "dtmi:dtdl:context;2"
+}

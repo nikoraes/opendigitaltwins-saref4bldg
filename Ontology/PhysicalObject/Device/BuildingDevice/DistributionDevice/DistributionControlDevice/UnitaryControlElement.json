@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:UnitaryControlElement;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A unitary control element combines a number of control components into a single product, such as a thermostat or humidistat.\n\nA unitary control element provides a housing for an aggregation of control or electrical distribution elements that, in combination, perform a singular (unitary) purpose. Each item in the aggregation may have its own geometric representation and location."
+  },
+  "displayName": {
+    "en": "Unitary control element"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionControlDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

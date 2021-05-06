@@ -1,0 +1,102 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Interceptor;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Size of the inlet connection. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "inlet connection size"
+      },
+      "name": "inletConnectionSize",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "cover width"
+      },
+      "name": "coverWidth",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal body length"
+      },
+      "name": "nominalBodyLength",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal body width"
+      },
+      "name": "nominalBodyWidth",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Size of the ventilating pipe(s). Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "ventilating pipe size"
+      },
+      "name": "ventilatingPipeSize",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "nominal body depth"
+      },
+      "name": "nominalBodyDepth",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Size of the outlet connection. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "outlet connection size"
+      },
+      "name": "outletConnectionSize",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "cover length"
+      },
+      "name": "coverLength",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "An interceptor is a device designed and installed in order to separate and retain deleterious, hazardous or undesirable matter while permitting normal sewage or liquids to discharge into a collection system by gravity."
+  },
+  "displayName": {
+    "en": "Interceptor"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowTreatmentDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

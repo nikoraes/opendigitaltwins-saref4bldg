@@ -1,0 +1,29 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Engine;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": [
+          "Enumeration defining the energy source or fuel cumbusted to generate heat.",
+          "The source of energy."
+        ]
+      },
+      "displayName": {
+        "en": "energy source"
+      },
+      "name": "energySource",
+      "schema": "string",
+      "writable": true
+    }
+  ],
+  "description": {
+    "en": "An engine is a device that converts fuel into mechanical energy through combustion."
+  },
+  "displayName": {
+    "en": "Engine"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Controller;1",
+  "@type": "Interface",
+  "description": {
+    "en": "A controller is a device that monitors inputs and controls outputs within a building automation system.\n\nA controller may be physical (having placement within a spatial structure) or logical (a software interface or aggregated within a programmable physical controller)."
+  },
+  "displayName": {
+    "en": "Controller"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:DistributionControlDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

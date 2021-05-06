@@ -1,0 +1,113 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:Pump;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Pump rotational speed under nominal conditions. Usually measured in cycles/s."
+      },
+      "displayName": {
+        "en": "nomminal rotation speed"
+      },
+      "name": "nomminalRotationSpeed",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable range of frictional resistance against which the fluid is being pumped. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "flow resistance range"
+      },
+      "name": "flowResistanceMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable range of frictional resistance against which the fluid is being pumped. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "flow resistance range"
+      },
+      "name": "flowResistanceMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable operation ambient (air, fluid) temperature range. Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "operation temperature range"
+      },
+      "name": "operationTemperatureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The connection size of the to and from the pump. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "connection size"
+      },
+      "name": "connectionSize",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable range of volume of fluid being pumped against the resistance specified. Usually measured in kg/s."
+      },
+      "displayName": {
+        "en": "pump flow rate range"
+      },
+      "name": "pumpFlowRateMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Minimum liquid pressure at the pump inlet to prevent cavitation. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "net positive suction head"
+      },
+      "name": "netPositiveSuctionHead",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable range of volume of fluid being pumped against the resistance specified. Usually measured in kg/s."
+      },
+      "displayName": {
+        "en": "pump flow rate range"
+      },
+      "name": "pumpFlowRateMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A pump is a device which imparts mechanical work on fluids or slurries to move them through a channel or pipeline. A typical use of a pump is to circulate chilled water or heating hot water in a building services distribution system."
+  },
+  "displayName": {
+    "en": "Pump"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:FlowMovingDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}

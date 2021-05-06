@@ -1,0 +1,69 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:VibrationIsolator;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Height of the vibration isolator before tha application of load. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "height"
+      },
+      "name": "height",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Static deflection of the vibration isolator. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "isolator static deflection"
+      },
+      "name": "isolatorStaticDeflection",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The compressibility of the vibration isolator."
+      },
+      "displayName": {
+        "en": "isolator compressibility"
+      },
+      "name": "isolatorCompressibility",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The vibration transmissibility percentage."
+      },
+      "displayName": {
+        "en": "vibration transmissibility"
+      },
+      "name": "vibrationTransmissibility",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "The maximum weight that can be carried by the vibration isolator. Usually measured in kilograms (kg) or grams (g)."
+      },
+      "displayName": {
+        "en": "maximum supported weight"
+      },
+      "name": "supportedWeightMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A vibration isolator is a device used to minimize the effects of vibration transmissibility in a building."
+  },
+  "displayName": {
+    "en": "Vibration isolator"
+  },
+  "extends": "dtmi:digitaltwins:saref:core:Device;1",
+  "@context": "dtmi:dtdl:context;2"
+}

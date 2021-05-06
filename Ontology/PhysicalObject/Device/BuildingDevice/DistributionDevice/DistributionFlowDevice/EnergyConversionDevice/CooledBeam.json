@@ -1,0 +1,239 @@
+{
+  "@id": "dtmi:digitaltwins:saref:saref4bldg:CooledBeam;1",
+  "@type": "Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Integrated lighting in cooled beam."
+      },
+      "displayName": {
+        "en": "integrated lighting type"
+      },
+      "name": "integratedLightingType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Factory fitted waterflow control system."
+      },
+      "displayName": {
+        "en": "water flow control system type"
+      },
+      "name": "waterFlowControlSystemType",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Finish color for cooled beam."
+      },
+      "displayName": {
+        "en": "finish color"
+      },
+      "name": "finishColor",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "Is it free hanging type (not mounted in a false ceiling)?"
+      },
+      "displayName": {
+        "en": "is free hanging"
+      },
+      "name": "isFreeHanging",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "description": {
+        "en": "The manner in which the pipe connection is made to the cooled beam."
+      },
+      "displayName": {
+        "en": "pipe connection enum"
+      },
+      "name": "pipeConnectionEnum",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal return water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal return water temperature cooling"
+      },
+      "name": "nominalReturnWaterTemperatureCooling",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal surrounding temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal sorrounding temperature heating"
+      },
+      "name": "nominalSorroundingTemperatureHeating",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal water flow (refers to nominal cooling capacity). Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "nominal water flow cooling"
+      },
+      "name": "nominalWaterFlowCooling",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal surrounding temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal sorrounding temperature cooling"
+      },
+      "name": "nominalSorroundingTemperatureCooling",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "water pressure range"
+      },
+      "name": "waterPressureMin",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal return water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal return water temperature heating"
+      },
+      "name": "nominalReturnWaterTemperatureHeating",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal supply water temperature (refers to nominal heating capacity). Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal supply water temperature heating"
+      },
+      "name": "nominalSupplyWaterTemperatureHeating",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal supply water temperature (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal supply water temperature cooling"
+      },
+      "name": "nominalSupplyWaterTemperatureCooling",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Width of coil. Usually measured in millimeters (mm"
+      },
+      "displayName": {
+        "en": "coil width"
+      },
+      "name": "coilWidth",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Allowable water circuit working pressure range. Usually measured in Pascals (Pa, N/m2)."
+      },
+      "displayName": {
+        "en": "water pressure range"
+      },
+      "name": "waterPressureMax",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal water flow (refers to nominal heating capacity). Usually measured in m3/s."
+      },
+      "displayName": {
+        "en": "nominal water flow heating"
+      },
+      "name": "nominalWaterFlowHeating",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal surrounding humidity (refers to nominal cooling capacity). Usually measured in degrees Kelvin (K)."
+      },
+      "displayName": {
+        "en": "nominal sorrounding humidity cooling"
+      },
+      "name": "nominalSorroundingHumidityCooling",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Length of coil. Usually measured in millimeters (mm)."
+      },
+      "displayName": {
+        "en": "coil length"
+      },
+      "name": "coilLength",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal heating capacity. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal heating capacity"
+      },
+      "name": "nominalHeatingCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    },
+    {
+      "@type": "Relationship",
+      "description": {
+        "en": "Nominal cooling capacity. Usually measured in Watts (W, J/s)."
+      },
+      "displayName": {
+        "en": "nominal cooling capacity"
+      },
+      "name": "nominalCoolingCapacity",
+      "target": "dtmi:digitaltwins:saref:core:Measurement;1"
+    }
+  ],
+  "description": {
+    "en": "A cooled beam (or chilled beam) is a device typically used to cool air by circulating a fluid such as chilled water through exposed finned tubes above a space. Typically mounted overhead near or within a ceiling, the cooled beam uses convection to cool the space below it by acting as a heat sink for the naturally rising warm air of the space. Once cooled, the air naturally drops back to the floor where the cycle begins again."
+  },
+  "displayName": {
+    "en": "Cooled beam"
+  },
+  "extends": "dtmi:digitaltwins:saref:saref4bldg:EnergyConversionDevice;1",
+  "@context": "dtmi:dtdl:context;2"
+}
